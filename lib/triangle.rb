@@ -3,20 +3,28 @@ class Triangle
     @side_1 = side_1
     @side_2 = side_2
     @side_3 = side_3
+    
   end
 
-  def kind()
+
+  
     if (@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
       raise TriangleError
-    elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
+    end
+     if (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
       raise TriangleError
-    else
+    end
+    if (@s1 == nil) || (s2 == nil) || (s3 == nil)
+      raise TriangleError
+    end  
+    
+    def kind()
       if (@side_1 == @side_2) && (@side_2 == @side_3)
-        :equilateral
+        return :equilateral
       elsif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
-        :isosceles
+        return :isosceles
       elsif (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
-        :scalene
+        return :scalene
       end
     end
 
