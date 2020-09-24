@@ -27,4 +27,5 @@ end
 end
 
 class TriangleError <StandardError
+  "This is an illegal triangle."
 end
