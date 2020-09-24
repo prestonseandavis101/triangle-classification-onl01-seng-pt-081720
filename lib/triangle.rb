@@ -8,6 +8,6 @@ class Triangle
   end
   
   def kind()
-    if (s1 == 0)
+    if (s1 <= 0) ||
 end
 
