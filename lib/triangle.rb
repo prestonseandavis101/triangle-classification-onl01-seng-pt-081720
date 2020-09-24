@@ -8,6 +8,8 @@ class Triangle
   end
   
   def kind()
-    if (s1 <= 0) ||
+    if (s1 <= 0) || (s2 <= 0) || (s3 <= 0)
+      raise TriangleError
+    elsif (s1 + s2 )
 end
 
