@@ -1,5 +1,5 @@
 class Triangle
-attr_accessor :equlateral, :isosceles, :scalene
 
-def initialize
+def initialize(side1, side2, side3)
+end
 end
