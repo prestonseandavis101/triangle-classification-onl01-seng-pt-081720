@@ -17,9 +17,9 @@ class Triangle
     if (@s1 != @s2) && (@s2 != @s3) && (@s1 != @s3)
       :scalene
     elsif (@s1 == @s2) && (@s2 == @s3) && (@s1 == @s3)
-    :isosceles
-    elsif (@s1 == @s2) && (@s2 == @s3)
     :equilateral
+    elsif (@s1 == @s2) && (@s2 == @s3)
+    :isoceles
   end
 end
 end
