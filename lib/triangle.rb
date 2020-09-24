@@ -12,7 +12,7 @@ class Triangle
 
   def kind
     if(negative? == true || valid? == false)
-      raise TriangleError
+      raise RangeError
     elsif(equilateral?)
       :equilateral
     elsif(scalene?)
