@@ -15,7 +15,7 @@ class Triangle
     raise TriangleError
   else 
     if (@s1 != @s2) && (@s != @s3) && (@s1 != @s3)
-      :
+      :scalene
     
 end
 
